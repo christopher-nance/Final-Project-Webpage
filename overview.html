@@ -1,0 +1,53 @@
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - Final Project</title>
+    <link rel="stylesheet" type="text/css" href="static/content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/content/site.css">
+    <script src="static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body style="">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Home</a>
+                <a href="https://enhanced-website.azurewebsites.net/" class="navbar-brand">About Me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+
+<h2>Application Overview</h2>
+<p>As a user, you should expect to have a singular window open which houses the menu Gui. Once a game is started, the menu Gui will remain open but a new window will open using Turtle that you will use to see the game board which includes the gallows. The correclty guessed and incorrectly guessed letters will be displayed on the menu screen window. You will be able to move the window around.</p>
+<h3>Instructions</h3>
+<p>The computer will think of a 5 letter word from the text file below for you to guess...</p>
+<p>The game will now commence with the computer drawing the gallows.</p>
+<p>You can now begin guessing letters to ultimately guess the word the computer has chosen. Typically vowels "a", "e", "I", "o" and "u" are first to be guessed to maximize the chances of guessing a letter that will be in the word. The next most popular letters include "t", "n", "s", "h", "r", "d" and "l". Of course, which letters to guess will also depend on the word at hand and the letter placement of the letters guessed so far.</p>
+<p>For every letter you guess that is within the word the computer has chosen, the computer will write the letter on the dash corresponding to where it is located on the word. For every letter you guess that is not within the word the computer has chosen, the computer must draw a body part of the stick figure on the gallows. The choice of how many body parts to include is locked at 6. A head, torso and four limbs.</p>
+<p>If you are able to guess the word before all body parts are drawn on the gallows, then you WIN. If Player 2 has exhausted all guesses with the fact that all body parts have been drawn represented by a hangman, then you have lost.</p>
+<p><a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" class="btn btn-primary btn-large">Compiled Wordlist &raquo;</a></p>
+<h2>Technical Specifications</h2>
+<p>Although hangman is a fairly simplistic game, I do take advntage of some 3rd party libraries as well as my own to get the job done.</p>
+<h3>Libraries</h3>
+<ul>
+    <li><a href="https://docs.python.org/3/library/turtle.html">Turtle Graphics (8.4.0)</a></li>
+    <li>Turtle Gfx Shapes Library (1.0.0)</li>
+    <li><a href="https://pysimplegui.readthedocs.io/en/latest/">PySimpleGUI (4.57.0)</a></li>
+</ul>
+<h3>Dependencies</h3>
+<p>Hangman requires you to install the following packages in order to have full support</p>
+<ul>
+    <li>Turtle Graphics: Gui used for gameboard.</li>
+    <li>My Word List (bundled into application package): Used to choose what words can be used by the computer. Any word list can be used.</li>
+    <li>PySimpleGUI: Gui interface for the menu and partial gameboard.</li>
+    <li>My Turtle Gfx Library for Shapes (bundled into the application package): Used to draw the gallows and limbs.</li>
+</ul>
+<p>You can easily install all of these using pip, just run the following command: <code>pip install turtle pysimplegui</code></p>
+<p>Pre-packaged dependencies are not linked.</p>
